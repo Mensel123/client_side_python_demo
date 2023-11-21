@@ -7,11 +7,18 @@
       <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
   </head>
   <body>
-    <h1>Polyglot 🦜 💬 🇬🇧 ➡️ 🏴‍☠️</h1>
-    <p>Translate English into Pirate speak...</p>
-    <input type="text" name="english" id="english" placeholder="Type English here..." />
-    <button py-click="translate_english">Translate</button>
-    <div id="output"></div>
+    <h1>FCS reader</h1>
+    <label for="myfile">Select a file:</label>
+    
+    <input type="file" id="fileinput" name="fileInput"/>
+    <br />
+    <br />
+    <div id="print_output"></div>
+    <br />
+    <p>File Content:</p>
+    <div id="content">
+    </div>
+
     <script type="py" src="./main.py" config="./pyscript.json"></script>
   </body>
   
